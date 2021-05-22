@@ -4,15 +4,16 @@ chalk = require('chalk')
 var userName = readlineSync.question("What is your name? ")
 
 var questions = [{
-  question: "Where do I live? ",
-  answer: "ghazipur"
-},
+question: "Where do I live? ",
+answer: "ghazipur"},
 {question: "What is my favorite superhero's name? ",
 answer: "thor"},
 {question: "Which is my dream country to visit? ",
 answer: "greece"},
 {question: "Which is my favourite sitcom? ",
-answer: "breaking bad"}]
+answer: "breaking bad"},
+{question: "What is the name of my favourite bike?",
+answer: "duke"}]
 score = 0
 if(readlineSync.keyInYN(`\nHello ${userName}, do you know Saad?`)){
   
@@ -28,7 +29,5 @@ for(var i=0; i<questions.length; i++){
 }
 console.log(`Your score is: ${chalk.bgCyan(score)}`)
 }
-
-
 
 else{console.log("Thanks for showing up?")}
