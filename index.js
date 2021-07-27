@@ -30,4 +30,4 @@ for(var i=0; i<questions.length; i++){
 console.log(`Your score is: ${chalk.bgCyan(score)}`)
 }
 
-else{console.log("Thanks for showing up?")}
+else{console.log("Thanks for showing up🙌")}
